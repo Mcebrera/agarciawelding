@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
@@ -266,6 +266,11 @@
   color: #fff;
 }
 
+/* for testing css */
+/** {
+  border: .25px solid red;
+  box-sizing: border-box;
+}*/
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
@@ -292,6 +297,65 @@ a:focus, a:hover {
   color: #64a19d !important;
 }
 
+/*Isatop beginning*/
+a:focus {
+  outline: none;
+}
+
+.portfolioFilter {
+  padding: 15px 0;
+}
+
+.portfolioFilter a {
+  margin-right: 6px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.portfolioFilter a.current {
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  color: #f9f9f9;
+}
+
+.portfolioContainer {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  transition-property: transform, opacity;
+}
+
+img {
+  margin: 5px;
+}
+
+/*Isatope End*/
 footer {
   padding: 5rem 0;
 }
